@@ -1,0 +1,26 @@
+syntax = "proto2";
+option java_package = "com.example.webrtc";
+// option java_package = "com.varram.model";
+
+
+message IceCandidate {
+    required string sdp_mid = 1;
+    required int32 sdp_m_line_index = 2;
+    required string sdp = 3;
+    required string serverUrl = 4;
+}
+
+enum OfferType {
+    OFFER = 1;
+    PRANSWER = 2;
+    ANSWER = 4;
+}
+message SessionDescription {
+    required string offer_type = 1;
+    required string desc = 2;
+}
+
+message ToMessage {
+    optional IceCandidate ice = 1;
+    optional SessionDescription sdp = 2;
+}
