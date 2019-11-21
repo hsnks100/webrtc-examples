@@ -1,0 +1,25 @@
+{
+  "name": "rtc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/ws": "^6.0.3",
+    "jquery": "^3.4.1",
+    "readable-stream": "^3.4.0",
+    "simple-peer": "^9.6.2",
+    "ws": "^7.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.11",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
